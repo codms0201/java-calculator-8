@@ -1,5 +1,10 @@
 package calculator;
 
 public class StringCalculator {
-    // 계산기 로직 구현 예정
+    public int calculateSum(String input) {
+        if (input == null || input.isEmpty()) {
+            return 0;
+        }
+        return Integer.parseInt(input);
+    }
 }
